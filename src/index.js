@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const zad1 = "zadaća 01";
+const zad2 = "zadaća 02";
+
+const element1 = <h1>Rješenje zadaće 02</h1>;
+const element2 = <h1>Pretposljednja zadaća bila je {zad1}</h1>;
+const element3 = <h1>Posljednja dvije zadaće su: {zad1} {' '} {zad2}</h1>;
+
+const element = <div>{element1} {element2} {element3}</div>;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  element,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
